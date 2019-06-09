@@ -1,1 +1,21 @@
 // Mixins Here
+
+.button(@bg, @text) {
+    background: @bg;
+    color: @porcelain;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 2rem;
+
+    &:hover {
+        background: lighten(@btn-bg-color, 60%);
+        color: @ebony-clay;
+    }
+}
+
+.sticky {
+    position: sticky;
+    top: -60px;
+    opacity: 0.9;
+}
